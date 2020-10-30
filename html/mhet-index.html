@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ta-IN">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<head>
+    <link rel="stylesheet" type="text/css" href="mhet.css"/>
+</head>
+
+<body>
+
+<form>
+<h1>EXPENSE TRACKING SYSTEM</h1>
+<h2>Expense Category</h2>
+<h2>Expense Sub-Category</h2>
+<h2>Annual Budget</h2>
+<h2>Monthly Budget</h2>
+<h2>Weekly Budget </h2>
+<h3>Heading</h3>
+<h4>Heading</h4>
+<h5>Heading </h5>
+<h6>Heading </h6>
+<
+<div ng-app="">
+
+<form action="${pageContext.request.contextPath}/ExpenseCategoryServlet" method="post">
+
+  <p>Category Name : <input type="text" name="categoryname" id="categorynameid" ng-model="Category Name"></p>
+  <p>Category Desc : <input type="text" name="categorydesc" id="categorydescid" ng-model="Category Description"></p>
+  <button id="Submit" onclick="getVal()"> Submit </button>
+</form>
+</div>
+
+    <script type="text/javascript">
+	function getVal()
+	{
+
+	var catname, catdesc;
+	catname = document.getElementById('categoryname').value;
+	catdesc = document.getElementById('categorydesc').value;
+	}
+
+    </script>
+<PARAM name=catname value=catname >
+<PARAM name=catdesc value=catdesc >
+
+<SERVLET code="DrawStringApplet" >
+
+</body>
+</html>
+
